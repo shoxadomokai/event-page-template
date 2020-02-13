@@ -1,0 +1,29 @@
+BEGIN:VCALENDAR
+PRODID:-//Microsoft Corporation//Outlook 12.0 MIMEDIR//EN
+VERSION:2.0
+METHOD:PUBLISH
+X-MS-OLK-FORCEINSPECTOROPEN:TRUE
+BEGIN:VEVENT
+CLASS:PUBLIC
+DESCRIPTION:Abuja Tech Solutions Expo is a FREE technology showcase event for top executives and business champions to converge and experience unfettered immersion into game-changing technologies and get adequate clarity on their use cases for their sectors Owned and produced by Reliance Infosystems in partnership with Microsoft and Sophos, it aims at attracting business leaders and pioneering thinkers. 
+DTEND:20190328T160000Z
+DTSTART:20190328T090000Z
+LOCATION:NAF Conferece Center
+PRIORITY:5
+SEQUENCE:0
+SUMMARY;LANGUAGE=en-us:Abuja Tech Expo
+TRANSP:OPAQUE
+UID:040000008200E00074C5B7101A82E008000000008062306C6261CA01000000000000000
+X-MICROSOFT-CDO-BUSYSTATUS:BUSY
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-DISALLOW-COUNTER:FALSE
+X-MS-OLK-ALLOWEXTERNCHECK:TRUE
+X-MS-OLK-AUTOFILLLOCATION:FALSE
+X-MS-OLK-CONFTYPE:0
+BEGIN:VALARM
+TRIGGER:-PT1440M
+ACTION:DISPLAY
+DESCRIPTION:Reminder
+END:VALARM
+END:VEVENT
+END:VCALENDAR
