@@ -63,17 +63,16 @@ if (array_key_exists('name', $_POST)) {
         $mail->isSMTP();                                                             // Set mailer to use SMTP
         $mail->Host = 'smtp.sendgrid.net';                                          // Specify main and backup SMTP servers
         $mail->SMTPAuth = true;                                                    // Enable SMTP authentication
-        $mail->Username = 'azure_ade93e0a66da8ff0cd55cfa76c70dd3f@azure.com';     // SMTP username
-        $mail->Password = 'password@123';                                        // SMTP password
+        $mail->Username = '';     // SMTP username
+        $mail->Password = '';                                        // SMTP password
         $mail->SMTPSecure = 'tls'; 
         $mail->Port = 587; 25;
         $mail->CharSet = 'utf-8';
         
-        $mail->setFrom('marketing@relianceinfosystems.com', 'Reliance Infosystems');
-        $mail->addAddress('adomokai@relianceinfosystems.com', 'Engage Us');
-//        $mail->addCC('becky@relianceinfosystems.com');
+        $mail->setFrom('example.com', 'Company Name');
+        $mail->addAddress('example.com', 'Engage Us');
         $mail->addReplyTo($email, $name);
-        $mail->Subject = 'New Registration from Website (Abuja Tech Expo)';
+        $mail->Subject = 'New Registration from Website';
         $mail->Body = <<<EOT
             Name: {$_POST['name']}
             \n
@@ -95,15 +94,9 @@ if (array_key_exists('name', $_POST)) {
     
         $mail->ClearAllRecipients();
         $mail->addAddress($email);
-        $mail->addEmbeddedImage('../images/logoblack.png', 'logoblack.png');
-        $mail->addEmbeddedImage('../images/checked.png', 'checked.png');
-        $mail->addEmbeddedImage('../images/avaya.png', 'avaya.png');
-        $mail->addEmbeddedImage('../images/microsoft.png', 'microsoft.png');
-        $mail->addEmbeddedImage('../images/sophos.png', 'sophos.png');
-        $mail->addEmbeddedImage('../images/reliance.png', 'reliance.png');
         
         $mail->isHTML(true);
-        $mail->Subject = 'Abuja Tech Expo';
+        $mail->Subject = 'Event Name';
         $mail->Body = '
         <style type="text/css">
         html, body {
